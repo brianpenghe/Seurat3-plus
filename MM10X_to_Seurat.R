@@ -1,6 +1,4 @@
-#This set of functions prints Jackstraw results of a Seurat object and reports which are significant
-#Note that the number of PCs needs to be dividable by the row number you specified
-#It returns a list of significant PCs
+#This function reads MatrixMarket files into a Seurat object. It also reads metadata stored in metadata.tsv
 MM10X_to_Seurat <- function(prefix){
         ###prefix can be "temp/"
         Seurat <- CreateSeuratObject(Read10X(data.dir=prefix))

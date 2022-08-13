@@ -1,5 +1,5 @@
-#This set of functions blindly processes the data without any optimizations
-#It returns an object
+#This function calculates pair-wise differential genes among cell types.
+#
 PairwiseMarkers <- function(C1,min.pct=0.25,min.diff.pct=0.2){
         markers=NA
         for (i in levels(Idents(C1))){
